@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/jpg" sizes="32x32" href="photo/ico.jpg">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Оставить заявку</title>
+	<link rel="stylesheet" type="text/css" href="ZayavkaCSS.css">
+  
+</head>
+<body>
+  <div class="flex">
+    <div class="item "><i><a href="AlpinaDom.html"> Назад</a></i></div>
+  </div>
+    
+    <form id="dataForm" >
+      <div class="container">
+        <h1>Заполните данные</h1>
+          <p>Чтобы оставить заявку, необходимо ввести следующие данные:</p>
+            <hr>
+
+            <label for="name"><b>ФИО</b></label>
+            <input type="text" placeholder="Ваши фамилия имя и отчество" name="name" required>
+
+            <label for="psw"><b>Вид работ</b></label>
+              <input type="text" placeholder="Вид работ" name="vid" required>
+
+            <label for="psw-repeat"><b>Телефон</b></label>
+            <input type="text" placeholder="Напишите номер телефона, это требуется, чтобы мы могли с вами связатсья" name="phone" required>
+            <hr>
+
+            <p>Втечение 5 рабочих дней вам поступит звонок от наших работников. Спасибо что выбираете нас.</p>
+            <button type="submit" class="registerbtn">Отправить</button>
+      </div>
+
+      <div class="container signin">
+      </div>
+    </form>
+    
+
+    <div id="successMessage">Данные успешно отправлены!</div>
+
+    <script>
+      const form = document.getElementById('dataForm');
+      const successMessage = document.getElementById('successMessage');
+
+      form.addEventListener('submit', function(event) {
+          event.preventDefault(); // Отмена стандартного действия формы
+          successMessage.style.display = 'block'; // Показ сообщения об успешной отправке
+          
+          setTimeout(() => {
+              successMessage.style.opacity = '0'; // Сделать сообщение полупрозрачным
+              setTimeout(() => {
+                  successMessage.style.display = 'none'; // Скрыть сообщение
+                  successMessage.style.opacity = '1'; // Сбросить прозрачность
+              }, 500); // Время для исчезновения
+          }, 2000); // Время отображения сообщения
+          
+      });
+      
+  </script>
+  </div>
+</body>
+</html>
