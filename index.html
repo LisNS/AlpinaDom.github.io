@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>АльпинаДом</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Отделочные работы Утепление стен Брянск"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="photo/ico.jpg">
+	<link rel="stylesheet" type="text/css" href="index.css">
+ 
+    
+</head>
+    <body>
+         
+      <div class="carousel">
+        <div class="carousel-images" id="carouselImages">
+            <img src="Photo/Шапка111.jpg" alt="Изображение 1">
+            <img src="Photo/Шапка222.jpg" alt="Изображение 2">
+            <img src="Photo/Шапка333.jpg" alt="Изображение 2">
+            
+        </div>
+        <button class="button prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="button next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    <script>
+      let currentIndex = 0;
+  
+      function moveSlide(direction) {
+          const images = document.getElementById('carouselImages');
+          const totalImages = images.children.length;
+  
+          currentIndex += direction;
+  
+          if (currentIndex < 0) {
+              currentIndex = totalImages - 1;
+          } else if (currentIndex >= totalImages) {
+              currentIndex = 0;
+          }
+  
+          const offset = -currentIndex * 100;
+          images.style.transform = `translateX(${offset}%)`;
+      }
+  </script>
+    <div class="zagolovok" id="4">
+        <div id="z"><H1 >АльпинаДом</H1></div>
+        <div id="a"><a href="#1">   Услуги</a> </div>
+        <div id="a"><a href="#2"> О нас</a></div>
+        <div id="a"> <a href="#3"> Контакты</a></div>
+        <div id="d"><img id="img" src="photo/GPS.png">г Брянск</div>
+        
+    </div>
+
+    <div><p id="nach">Добро пожаловать в АльпинаДом!</p></div>
+    <div><p id="abz">Наша компания АльпинаДом предлагает профессиональные услуги по утеплению<br>
+        стен для вашего дома или коммерческого здания. Мы понимаем, что<br>
+        качественное утепление — это не только способ снизить расходы на отопление, но <br>
+        и залог комфортной жизни в вашем помещении.</p></div>
+
+    <div class="div"><p id="1" class="text">Наши услуги</p></div>
+
+<div class="uslugi">
+    <div class="hover-text-one">
+        <figure class="effect-text-three">
+            <img id="NUS" src="photo/НаружнееУтеплениеСтен.png" alt="" />
+            <figcaption>
+                <h3>Наружнее утепление стен</h3>
+                <p>от 10 000 рублей</p>
+            </figcaption>
+        </figure>
+
+        <figure class="effect-text-three">
+            <img id="OO" src="photo/ОконныеОткосы.png" alt="" />
+            <figcaption>
+                <h3>Отштукатури<br>вание оконных откосов</h3>
+                <p>от 5 000 рублей</p>
+            </figcaption>
+        </figure>
+
+        <figure class="effect-text-three">
+            <img id="ZOO" src="photo/Оконные отливы.png" alt="" />
+            <figcaption>
+                <h3>Замена оконных отливов</h3>
+                <p>от 5 000 рублей</p>
+            </figcaption>
+        </figure>
+    </div>
+
+
+
+    <div class="hover-text-one">
+        <figure class="effect-text-three">
+            <img id="NUS" src="photo/Гермитизация.png" alt="" />
+            <figcaption>
+                <h3>Герметизация межпанельных швов</h3>
+                <p>от 7 000 рублей</p>
+            </figcaption>
+        </figure>
+
+        <figure class="effect-text-three">
+            <img id="OO" src="photo/Ремонт.png" alt="" />
+            <figcaption>
+                <h3>Ремонт и окраска фасадов</h3>
+                <p>от 5 000 рублей</p>
+            </figcaption>
+        </figure>
+
+        <figure class="effect-text-three">
+            <img id="ZOO" src="photo/Вызов.png" alt="" />
+            <figcaption>
+                <h3>Выезд специалиста на замер и консультация</h3>
+                <p>БЕСПЛАТНО</p>
+            </figcaption>
+        </figure>
+    </div>
+     
+</div>
+
+<div class="Pochemy"><p id="2" class="text" >Почему выбирают нас?</p></div>
+<div class="bloki">
+<div class="PervayaLiniya">
+    <div class="module"><img src="photo/Команда.png"><p>Наша команда состоит из опытных специалистов</p></div>
+    <div class="module"><img src="photo/Материалы.png"><p>Мы используем только высококачественные материалы и новейшие технологии</p></div>
+    <div class="module"><img src="photo/Сроки.png"><p>проводим работы в строго установленные сроки и гарантируем высокий уровень сервиса</p></div>
+</div>
+<div class="VtorayaLinia">
+    <div class="module"><img src="photo/Высота.png"><p>Мы имеем все необходимые документы<br> на проведение высотных работ  </p></div>
+    <div class="module"><img src="photo/ЖЭК.png"><p>Предоставление документов для ЖЭКа</p></div>
+    <div class="module"><img src="photo/Нал.png"><p>Наличный и безналичный расчёт</p></div>
+    
+</div>
+
+<div class="blok1">
+ <div class="Kontakt"></div>
+   <div class="text"><h2 id="3">Наши контакты</h2>
+      <p id="petuh">+7 (953) 278-02-98</p><p id="petuh1"> Семков Денис Александрович (Директор)</p>
+      <p>+7 (483) 230-13-95</p>
+      <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" />
+
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+         <ul>
+             <li>
+                   <a href="https://t.me/AlpinaDom_Bot/a/">
+                     <i class="fab fa-telegram"></i>
+                   </a>
+             </li>
+              <li>
+                   <a href="https://vk.com/club87450468">
+                      <i class="fab fa-vk"></i>
+                   </a>
+              </li>
+              <li>
+                   <a href="https://web.whatsapp.com/">
+                      <i class="fab fa-whatsapp"></i>
+                   </a>
+    
+                </li>
+          </ul>
+ </div>
+<div class="zayavka"><a> Оставить заявку можно через наш телеграм бот<img id="NUS" src="photo/QR.jpg" alt="" /> </a></div>
+</div>
+<div class="futer">
+    <p class="centr"><a  href="#4">Главная</a></p>
+    <p class="centr"><a href="#1">Услуги</a></p>
+    <p class="centr"><a href="#2">О нас</a></p>
+    <p clsass="centr"><a href="#3">Контакты</a></p>
+</div>
+
+</body>
+</html>
